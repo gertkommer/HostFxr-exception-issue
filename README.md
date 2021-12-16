@@ -24,14 +24,14 @@ This project has a native process to host .NET Core using the `hostfxr` librarie
 
     * Use `dotnet run` (which will build and run at the same time).
 	
-##Expected output
+## Expected output
 
 The expected way it works is that nativehost(C++) will call the `InvokeCallBack` in Lib(C#). That calls the ErrorHandler function(C++) which throws an error. This error should be caught by the nativehost.
 ```console
 This is a test to see if i get in the catch
 ```
 
-##Actual output
+## Actual output
 
 Windows
 ```console
